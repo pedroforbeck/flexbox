@@ -1,33 +1,91 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout com Flexbox</title>
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .box {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .bg-red    { background-color: #ff4757; }
+    .bg-blue   { background-color: #1e90ff; }
+    .bg-green  { background-color: #2ed573; }
+    .bg-yellow { background-color: #ffa502; }
+    .bg-purple { background-color: #9b59b6; }
+    .bg-teal   { background-color: #00cec9; }
+  </style>
 </head>
-
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+<h1>Meu Título Customizado</h1>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="box bg-red">1</div>
+    <div class="box bg-blue">2</div>
+    <div class="box bg-green">3</div>
+  </div>
+
+  <div class="container">
+    <div class="box bg-yellow">1</div>
+    <div class="box bg-purple">2</div>
+    <div class="box bg-teal">3</div>
+    <div class="box bg-red">4</div>
+    <div class="box bg-blue">5</div>
+    <div class="box bg-green">6</div>
+  </div>
+</div>
 
 </body>
-
 </html>
